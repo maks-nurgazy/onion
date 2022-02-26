@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'client',
     'subscription',
     'debt_sale',
-    'debt_payment'
+    'debt_payment',
+    'rest_framework'
 
 ]
 
