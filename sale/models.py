@@ -1,7 +1,7 @@
 from django.db import models
 
 from product.models import Product
-from user.models import User
+from user.models import Users
 
 
 class Sale(models.Model):
@@ -9,4 +9,4 @@ class Sale(models.Model):
     price = models.FloatField()
     createdDate = models.DateField()
     updatedDate = models.DateField()
-    id_user = models.ForeignKey(User, on_delete=models.CASCADE)
+    id_user = models.ForeignKey(Users, on_delete=models.CASCADE)

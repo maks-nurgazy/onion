@@ -1,8 +1,9 @@
 from rest_framework import serializers
 
-import debt_sale
+from user.models import Users
 
 
-class DebtSalesSerializer(serializers.HyperlinkedModelSerializer):
+class UserSerializer(serializers.ModelSerializer):
     class Meta:
-        model = debt_sale
+        model = Users
+        fields = '__all__'
